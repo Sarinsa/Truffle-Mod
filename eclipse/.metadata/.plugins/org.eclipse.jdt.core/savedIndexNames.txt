@@ -1,0 +1,1 @@
+INDEX VERSION 1.127+C:\Users\Bruker\Desktop\Truffle Mod\eclipse\.metadata\.plugins\org.eclipse.jdt.core

@@ -1,0 +1,114 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 06.06.16 20:50
+Description: Rendering Block Entity
+
+java.lang.NullPointerException: Rendering Block Entity
+	at com.trufflemod.renderer.BlockCampFireRenderer.renderTileEntityAt(BlockCampFireRenderer.java:45)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:141)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntity(TileEntityRendererDispatcher.java:126)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:539)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at com.trufflemod.renderer.BlockCampFireRenderer.renderTileEntityAt(BlockCampFireRenderer.java:45)
+
+-- Block Entity Details --
+Details:
+	Name: campFire // com.trufflemod.tileentity.TileEntityCampFire
+	Block type: ID #197 (tile.campFire // com.trufflemod.block.BlockCampFire)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (-973,4,-875), Chunk: (at 3,0,5 in -61,-55; contains blocks -976,0,-880 to -961,255,-865), Region: (-2,-2; contains chunks -64,-64 to -33,-33, blocks -1024,0,-1024 to -513,255,-513)
+	Actual block type: ID #197 (tile.campFire // com.trufflemod.block.BlockCampFire)
+	Actual block data value: 0 / 0x0 / 0b0000
+Stacktrace:
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:141)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntity(TileEntityRendererDispatcher.java:126)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:539)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player252'/208, l='MpServer', x=-971,25, y=5,62, z=-876,51]]
+	Chunk stats: MultiplayerChunkCache: 520, 520
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-865,4,-1190), Chunk: (at 15,0,10 in -55,-75; contains blocks -880,0,-1200 to -865,255,-1185), Region: (-2,-3; contains chunks -64,-96 to -33,-65, blocks -1024,0,-1536 to -513,255,-1025)
+	Level time: 92163 game time, 4583 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 40 total; [EntityItem['item.item.slimeball'/209, l='MpServer', x=-966,13, y=2,13, z=-879,94], EntityClientPlayerMP['Player252'/208, l='MpServer', x=-971,25, y=5,62, z=-876,51], EntitySlime['Slime'/211, l='MpServer', x=-973,69, y=2,00, z=-884,69], EntitySlime['Slime'/212, l='MpServer', x=-973,69, y=2,00, z=-882,31], EntitySlime['Slime'/213, l='MpServer', x=-973,69, y=2,76, z=-883,47], EntitySlime['Slime'/214, l='MpServer', x=-968,64, y=4,89, z=-849,12], EntitySlime['Slime'/215, l='MpServer', x=-952,13, y=4,00, z=-866,22], EntitySlime['Slime'/216, l='MpServer', x=-936,13, y=4,00, z=-867,28], EntitySlime['Slime'/217, l='MpServer', x=-976,16, y=4,00, z=-841,15], EntitySlime['Slime'/218, l='MpServer', x=-1009,81, y=4,00, z=-865,28], EntitySlime['Slime'/219, l='MpServer', x=-979,34, y=4,35, z=-901,94], EntitySlime['Slime'/220, l='MpServer', x=-989,13, y=4,69, z=-905,37], EntitySlime['Slime'/221, l='MpServer', x=-996,78, y=4,00, z=-840,38], EntitySlime['Slime'/222, l='MpServer', x=-1024,22, y=3,00, z=-846,16], EntitySlime['Slime'/223, l='MpServer', x=-1024,01, y=4,60, z=-887,91], EntitySlime['Slime'/224, l='MpServer', x=-989,54, y=4,47, z=-917,22], EntitySlime['Slime'/225, l='MpServer', x=-912,01, y=4,00, z=-852,77], EntitySlime['Slime'/226, l='MpServer', x=-961,59, y=4,00, z=-826,28], EntitySlime['Slime'/227, l='MpServer', x=-1024,36, y=4,00, z=-839,78], EntitySlime['Slime'/228, l='MpServer', x=-1027,13, y=4,00, z=-906,28], EntitySlime['Slime'/229, l='MpServer', x=-1002,01, y=4,26, z=-922,49], EntitySlime['Slime'/230, l='MpServer', x=-922,94, y=4,00, z=-910,77], EntitySlime['Slime'/231, l='MpServer', x=-971,16, y=4,89, z=-804,41], EntitySlime['Slime'/232, l='MpServer', x=-995,60, y=4,00, z=-801,41], EntitySlime['Slime'/233, l='MpServer', x=-980,69, y=4,00, z=-818,78], EntitySlime['Slime'/234, l='MpServer', x=-915,09, y=4,00, z=-857,31], EntitySlime['Slime'/235, l='MpServer', x=-961,42, y=5,00, z=-813,00], EntitySlime['Slime'/236, l='MpServer', x=-1005,07, y=4,00, z=-941,46], EntitySlime['Slime'/237, l='MpServer', x=-893,42, y=4,00, z=-839,00], EntitySlime['Slime'/238, l='MpServer', x=-1041,51, y=4,00, z=-882,68], EntitySlime['Slime'/239, l='MpServer', x=-897,92, y=4,00, z=-826,43], EntitySlime['Slime'/240, l='MpServer', x=-913,74, y=5,02, z=-810,78], EntitySlime['Slime'/244, l='MpServer', x=-1006,31, y=4,00, z=-797,41], EntitySlime['Slime'/245, l='MpServer', x=-1008,36, y=4,54, z=-954,38], EntitySlime['Slime'/246, l='MpServer', x=-997,94, y=4,00, z=-947,31], EntitySlime['Slime'/247, l='MpServer', x=-935,50, y=3,39, z=-944,78], EntitySlime['Slime'/248, l='MpServer', x=-1033,81, y=5,10, z=-802,70], EntitySlime['Slime'/249, l='MpServer', x=-902,59, y=5,01, z=-940,41], EntitySlime['Slime'/250, l='MpServer', x=-903,21, y=5,00, z=-932,39], EntitySlime['Slime'/251, l='MpServer', x=-903,47, y=4,00, z=-929,65]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_65, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 750665872 bytes (715 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAA	CodeChickenCore{1.0.4.29} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAA	NotEnoughItems{1.0.3.74} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.3.74-universal.jar) 
+	UCHIJAAAA	trufflemod{0.7b} [Truffle Mod] (Truffle Mod) 
+	UCHIJAAAA	harvestcraft{1.7.10j} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10Lb.jar) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 368.22' Renderer: 'GeForce GTX 970/PCIe/SSE2'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 970/PCIe/SSE2 GL version 4.5.0 NVIDIA 368.22, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

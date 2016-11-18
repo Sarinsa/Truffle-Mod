@@ -1,0 +1,16 @@
+[
+{
+  "modid": "trufflemod",
+  "name": "Truffle Mod",
+  "description": "A food mod based on the truffle mushroom. Adds weird artifacts, cool artifacts and applies potion effects to food!",
+  "version": "0.7b",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Sarinsa"],
+  "credits": "Great tutorials by Pahimar getting me started! Also a lot of creds to my friend for knocking some logic into my head.",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

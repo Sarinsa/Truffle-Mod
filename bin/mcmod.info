@@ -1,0 +1,16 @@
+[
+{
+  "modid": "assets.trufflemod",
+  "name": "Truffle Mod",
+  "description": "Adds foods (mainly pizza) and somewhat advanced and logic recipes for them!",
+  "version": "0.7b",
+  "mcversion": "1.7.10",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Sarinsa"],
+  "credits": "Me me me. Just me! (And some tutorials by BedrockMiner)",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

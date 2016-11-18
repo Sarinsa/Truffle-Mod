@@ -1,0 +1,104 @@
+//Items
+
+item.defaultTruffle.name=Truffle
+item.trufflePizza_0.name=Truffle Pizza
+item.trufflePizza_strength.name=Truffle Pizza ò Strength
+item.trufflePizza_speed.name=Truffle Pizza ò Speed
+item.trufflePizza_fireResistance.name=Truffle Pizza ò Fire Resistance
+item.cheese.name=Cheese
+item.tomato.name=Tomato
+item.salt.name=Salt
+item.cookedTruffle.name=Cooked Truffle
+item.tomatoSeeds.name=Tomato Seeds
+item.pizzaMargarita.name=Pizza Margarita
+item.exclusiveMargarita.name=Exclusive Margarita
+item.stoneGear.name=Stone Gear
+item.mortar_and_pestle.name=Mortar and Pestle
+item.tomatoSauce.name=Tomato Sauce
+item.flour.name=Flour
+item.pizzaDough.name=Pizza Dough
+item.rennetBucket.name=Rennet
+item.mortarAP_tSauce.name=Mortar and Pestle
+item.pineNuts.name=Pine Nuts
+item.itemPineCone.name=Pine Cone
+item.knife.name=Knife
+item.cowIntestines.name=Cow Intestines
+item.aquamarineGem.name=Aquamarine Crystal
+item.avocadoRecord.name=Music Disc
+item.arugulaSeeds.name=Arugula Seeds
+item.itemHellishSpice.name=Hellish Spice
+item.tGlass_bottle.name=Sauce Glass
+item.arugula.name=Arugula
+item.grindStone.name=Grindstone
+item.netherTruffle.name=Nether Truffle
+item.rottenTomato.name=Rotten Tomato
+item.spinelGem.name=Spinel Gem
+item.blueberry.name=Blueberry
+item.itemThistle.name=Thistle
+item.meatPizza.name=Extra-Meat Pizza
+item.goldenTruffleTier1.name=Golden Truffle
+item.goldenTruffleTier2.name=God Truffle
+item.potionDouchebaggery.name=Potion of Douchebaggery
+item.itemLittleSack.name=Tiny sack
+
+
+//Blocks
+
+
+tile.truffleSoil.name=Truffle Soil
+tile.saltOre.name=Salt Ore
+tile.flourGrinder.name=Flour Grinder
+tile.cheeseBlock.name=Cheese wheel
+tile.blockEmil.name=Emil Artifact
+tile.blockDavid.name=David Artifact
+tile.oreAquamarine.name=Aquamarine Ore
+tile.blockAquamarine_raw.name=Aquamarine Block
+tile.blockAquamarine_poolished.name=Poolished Aquamarine
+tile.blockAquamarine_semiPoolished.name=Semi Poolished Aquamarine
+tile.pineLog.name=Pine Wood
+tile.pinePlanks.name=Pine Wood Planks
+tile.pineLeaves.name=Pine Leaves
+tile.pineSapling.name=Pine Sapling
+tile.pineStairs.name=Pine Stairs
+tile.pineSlab.name=Pine Wood Slab
+tile.blockGrindStone.name=Grind Stone
+tile.netherOreAquamarine.name=Nether Aquamarine Ore
+tile.netherTSoil.name=Nether Truffle Soil
+tile.netherTSoilCrop.name=Nether Truffle Crop
+tile.tomatoCrop.name=Tomato Crop
+tile.aGrass.name=Arugula Crop
+tile.netherOreSpinel.name=Nether Spinel Ore
+tile.blockSpinel_raw.name=Spinel Block
+tile.blockSpinel_semiPoolished.name=Semi Poolished Spinel
+tile.blockSpinel_poolished.name=Poolished Spinel
+tile.pineFence.name=Pine Fence
+tile.woodenTub.name=Wooden Tub
+tile.galiumVerum.name=Galium Verum
+tile.campFire.name=Campfire
+
+
+
+
+//Tab
+
+itemGroup.trufflemod=Truffle Mod
+
+
+//Misc
+
+item.record.avocadoRepublic.desc=The Immature Avocados - Avocado Republic
+
+
+//Keys
+
+key.category=Truffle Mod
+
+
+//Damage Sources
+
+death.attack.goldenTruffle=%1$s was overwhelmed by the power of a Golden Truffle.
+death.attack.goldenTruffle.player=%1$s tried to absorb powers from a Golden Truffle while fighting %2$s, but did not succeed.
+
+
+
+

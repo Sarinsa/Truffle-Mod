@@ -1,0 +1,116 @@
+---- Minecraft Crash Report ----
+// Don't do that.
+
+Time: 07.06.16 11:19
+Description: Rendering Block Entity
+
+java.lang.IllegalStateException: Not tesselating!
+	at net.minecraft.client.renderer.Tessellator.draw(Tessellator.java:99)
+	at com.trufflemod.renderer.BlockCampFireRenderer.renderTileEntityAt(BlockCampFireRenderer.java:63)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:141)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntity(TileEntityRendererDispatcher.java:126)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:539)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+	at net.minecraft.client.renderer.EntityRenderer.updateCameraAndRender(EntityRenderer.java:1087)
+	at net.minecraft.client.Minecraft.runGameLoop(Minecraft.java:1067)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:962)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.client.renderer.Tessellator.draw(Tessellator.java:99)
+	at com.trufflemod.renderer.BlockCampFireRenderer.renderTileEntityAt(BlockCampFireRenderer.java:63)
+
+-- Block Entity Details --
+Details:
+	Name: campFire // com.trufflemod.tileentity.TileEntityCampFire
+	Block type: ID #197 (tile.campFire // com.trufflemod.block.BlockCampFire)
+	Block data value: 0 / 0x0 / 0b0000
+	Block location: World: (-971,4,-877), Chunk: (at 5,0,3 in -61,-55; contains blocks -976,0,-880 to -961,255,-865), Region: (-2,-2; contains chunks -64,-64 to -33,-33, blocks -1024,0,-1024 to -513,255,-513)
+	Actual block type: ID #197 (tile.campFire // com.trufflemod.block.BlockCampFire)
+	Actual block data value: 0 / 0x0 / 0b0000
+Stacktrace:
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntityAt(TileEntityRendererDispatcher.java:141)
+	at net.minecraft.client.renderer.tileentity.TileEntityRendererDispatcher.renderTileEntity(TileEntityRendererDispatcher.java:126)
+	at net.minecraft.client.renderer.RenderGlobal.renderEntities(RenderGlobal.java:539)
+	at net.minecraft.client.renderer.EntityRenderer.renderWorld(EntityRenderer.java:1300)
+
+-- Affected level --
+Details:
+	Level name: MpServer
+	All players: 1 total; [EntityClientPlayerMP['Player334'/3945327, l='MpServer', x=-970,50, y=4,62, z=-877,64]]
+	Chunk stats: MultiplayerChunkCache: 624, 624
+	Level seed: 0
+	Level generator: ID 01 - flat, ver 0. Features enabled: false
+	Level generator options: 
+	Level spawn location: World: (-865,4,-1190), Chunk: (at 15,0,10 in -55,-75; contains blocks -880,0,-1200 to -865,255,-1185), Region: (-2,-3; contains chunks -64,-96 to -33,-65, blocks -1024,0,-1536 to -513,255,-1025)
+	Level time: 123337 game time, 19116 day time
+	Level dimension: 0
+	Level storage version: 0x00000 - Unknown?
+	Level weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: false
+	Forced entities: 46 total; [EntityCreeper['Creeper'/5306066, l='MpServer', x=-924,50, y=4,00, z=-847,50], EntitySkeleton['Skeleton'/5566289, l='MpServer', x=-1030,50, y=4,00, z=-875,50], EntitySkeleton['Skeleton'/5566291, l='MpServer', x=-1033,50, y=4,00, z=-879,50], EntityCreeper['Creeper'/5483074, l='MpServer', x=-955,50, y=4,00, z=-811,50], EntityCreeper['Creeper'/5483072, l='MpServer', x=-961,50, y=4,00, z=-812,50], EntityCreeper['Creeper'/5566285, l='MpServer', x=-1026,50, y=4,00, z=-875,50], EntityZombie['Zombie'/5483123, l='MpServer', x=-1027,50, y=4,00, z=-807,50], EntitySpider['Spider'/5253621, l='MpServer', x=-951,00, y=4,00, z=-922,22], EntityZombie['Zombie'/5483124, l='MpServer', x=-1025,50, y=4,00, z=-808,50], EntityZombie['Zombie'/5566305, l='MpServer', x=-946,50, y=4,00, z=-836,50], EntityZombie['Zombie'/5566306, l='MpServer', x=-945,50, y=4,00, z=-833,50], EntityCreeper['Creeper'/4573311, l='MpServer', x=-997,09, y=4,00, z=-895,22], EntityZombie['Zombie'/5483116, l='MpServer', x=-1032,50, y=4,00, z=-799,50], EntitySkeleton['Skeleton'/5566229, l='MpServer', x=-929,50, y=4,00, z=-885,50], EntitySlime['Slime'/3945332, l='MpServer', x=-973,69, y=2,00, z=-883,53], EntitySlime['Slime'/3945333, l='MpServer', x=-973,69, y=2,00, z=-882,48], EntityClientPlayerMP['Player334'/3945327, l='MpServer', x=-970,50, y=4,62, z=-877,64], EntitySlime['Slime'/3945330, l='MpServer', x=-973,69, y=1,00, z=-884,69], EntitySlime['Slime'/3945331, l='MpServer', x=-973,69, y=2,18, z=-882,30], EntitySkeleton['Skeleton'/5306143, l='MpServer', x=-1006,25, y=4,00, z=-874,84], EntityCreeper['Creeper'/5023263, l='MpServer', x=-1010,84, y=4,00, z=-957,13], EntitySkeleton['Skeleton'/5141147, l='MpServer', x=-1000,75, y=4,00, z=-827,22], EntityCreeper['Creeper'/5452934, l='MpServer', x=-948,78, y=4,00, z=-905,09], EntitySlime['Slime'/4260375, l='MpServer', x=-972,15, y=2,00, z=-884,38], EntityCreeper['Creeper'/5023259, l='MpServer', x=-1018,50, y=4,00, z=-956,50], EntityCreeper['Creeper'/5566222, l='MpServer', x=-940,06, y=4,00, z=-880,63], EntityCreeper['Creeper'/5306123, l='MpServer', x=-1022,63, y=4,00, z=-931,94], EntityCreeper['Creeper'/5306124, l='MpServer', x=-1023,50, y=4,00, z=-943,50], EntitySkeleton['Skeleton'/5483056, l='MpServer', x=-1022,50, y=4,00, z=-871,50], EntityZombie['Zombie'/5483060, l='MpServer', x=-1014,50, y=4,00, z=-879,50], EntityXPOrb['Experience Orb'/5574333, l='MpServer', x=-972,96, y=2,25, z=-883,99], EntityCreeper['Creeper'/5483066, l='MpServer', x=-967,09, y=4,00, z=-829,16], EntityCreeper['Creeper'/5483065, l='MpServer', x=-954,50, y=4,00, z=-819,50], EntityXPOrb['Experience Orb'/5574335, l='MpServer', x=-973,24, y=2,25, z=-883,48], EntityXPOrb['Experience Orb'/5574334, l='MpServer', x=-972,23, y=2,25, z=-882,11], EntityCreeper['Creeper'/5483070, l='MpServer', x=-954,50, y=4,00, z=-816,50], EntityCreeper['Creeper'/5483068, l='MpServer', x=-955,50, y=4,00, z=-819,50], EntityWitch['Witch'/5483042, l='MpServer', x=-911,50, y=4,00, z=-928,50], EntitySpider['Spider'/5306148, l='MpServer', x=-1002,25, y=4,00, z=-896,72], EntityZombie['Zombie'/5483047, l='MpServer', x=-916,75, y=4,00, z=-936,50], EntityZombie['Zombie'/5483046, l='MpServer', x=-921,16, y=4,00, z=-939,13], EntityWitch['Witch'/5483044, l='MpServer', x=-910,50, y=4,00, z=-929,50], EntitySkeleton['Skeleton'/5253546, l='MpServer', x=-1029,50, y=4,00, z=-957,50], EntityZombie['Zombie'/5483048, l='MpServer', x=-915,41, y=4,00, z=-935,91], EntitySkeleton['Skeleton'/5483053, l='MpServer', x=-1022,50, y=4,00, z=-879,50], EntityXPOrb['Experience Orb'/5595946, l='MpServer', x=-949,38, y=4,25, z=-869,19]]
+	Retry entities: 0 total; []
+	Server brand: fml,forge
+	Server type: Integrated singleplayer server
+Stacktrace:
+	at net.minecraft.client.multiplayer.WorldClient.addWorldInfoToCrashReport(WorldClient.java:415)
+	at net.minecraft.client.Minecraft.addGraphicsAndWorldToCrashReport(Minecraft.java:2566)
+	at net.minecraft.client.Minecraft.run(Minecraft.java:984)
+	at net.minecraft.client.main.Main.main(Main.java:164)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at net.minecraft.launchwrapper.Launch.launch(Launch.java:135)
+	at net.minecraft.launchwrapper.Launch.main(Launch.java:28)
+	at net.minecraftforge.gradle.GradleStartCommon.launch(Unknown Source)
+	at GradleStart.main(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_65, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 797101680 bytes (760 MB) / 1037959168 bytes (989 MB) up to 1037959168 bytes (989 MB)
+	JVM Flags: 3 total; -Xincgc -Xmx1024M -Xms1024M
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 7 mods loaded, 7 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCHIJAAAAAAAAA	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCHIJAAAAAAAAA	FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAAAAAAA	Forge{10.13.4.1614} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1614-1.7.10.jar) 
+	UCHIJAAAAAAAAA	CodeChickenCore{1.0.4.29} [CodeChicken Core] (minecraft.jar) 
+	UCHIJAAAAAAAAA	NotEnoughItems{1.0.3.74} [Not Enough Items] (NotEnoughItems-1.7.10-1.0.3.74-universal.jar) 
+	UCHIJAAAAAAAAA	trufflemod{0.7b} [Truffle Mod] (Truffle Mod) 
+	UCHIJAAAAAAAAA	harvestcraft{1.7.10j} [Pam's HarvestCraft] (Pam's HarvestCraft 1.7.10Lb.jar) 
+	GL info: ' Vendor: 'NVIDIA Corporation' Version: '4.5.0 NVIDIA 368.22' Renderer: 'GeForce GTX 970/PCIe/SSE2'
+	Launched Version: 1.7.10
+	LWJGL: 2.9.1
+	OpenGL: GeForce GTX 970/PCIe/SSE2 GL version 4.5.0 NVIDIA 368.22, NVIDIA Corporation
+	GL Caps: Using GL 1.3 multitexturing.
+Using framebuffer objects because OpenGL 3.0 is supported and separate blending is supported.
+Anisotropic filtering is supported and maximum anisotropy is 16.
+Shaders are available because OpenGL 2.1 is supported.
+
+	Is Modded: Definitely; Client brand changed to 'fml,forge'
+	Type: Client (map_client.txt)
+	Resource Packs: []
+	Current Language: English (US)
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	Anisotropic Filtering: Off (1)

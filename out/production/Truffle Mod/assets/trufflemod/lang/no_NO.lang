@@ -1,0 +1,74 @@
+//Items
+
+item.defaultTruffle.name=Trøffel
+item.trufflePizza_0.name=Trøffel Pizza
+item.trufflePizza_1.name=Trøffel Pizza
+item.trufflePizza_2.name=Trøffel Pizza
+item.trufflePizza_3.name=Trøffel Pizza
+item.cheese.name=Ost
+item.salt.name=Salt
+item.tomato.name=Tomat
+item.cookedTruffle.name=Stekt Trøffel
+item.tomatoSeeds.name=Tomatfrø
+item.pizzaMargarita.name=Pizza Margarita
+item.exclusiveMargarita.name=Eksklusiv Margarita
+item.stoneGear.name=Stein Tannhjul
+item.mortar_and_pestle.name=Morter
+item.tomatoSauce.name=Tomatsaus
+item.flour.name=Mel
+item.pizzaDough.name=Pizzadeig
+item.rennetBucket.name=Osteløype
+item.mortarAP_tSauce.name=Morter
+item.pineNuts.name=Pinje Kjerner
+item.pineCone.name=Kongle
+item.knife.name=Kniv
+item.cowIntestines.name=Ku Tarm
+item.aquamarineGem.name=Akvamarin Krystall
+item.avocadoRecord.name=Langspillplate
+item.arugulaSeeds.name=Ruccolafrø
+item.itemArugula.name=Ruccola
+item.hellishSpice.name=Demonsk Krydder
+item.netherTruffle.name=Nether Trøffel
+item.rottenTomato.name=Råtten Tomat
+item.grindStone.name=Slipestein
+item.spinelGem.name=Spinell
+
+
+//Blocks
+
+
+tile.tSoil.name=Trøffel Jord
+tile.saltOre.name=Saltstein
+tile.flourGrinder.name=Mel Kvern
+tile.cheeseBlock.name=Jarlsberg Ostehjul
+tile.blockEmil.name=Eldgammel Emil Artefakt
+tile.blockDavid.name=Eldgammel David Artefakt
+tile.oreAquamarine.name=Akvamarin Malm
+tile.blockAquamarine_raw.name=Akvamarinblokk
+tile.blockAquamarine_semiPoolished.name= Semi-polert Akvamarinblokk
+tile.blockAquamarine_poolished.name=Polert Akvamarinblokk
+tile.pineLeaves.name=Furubar
+tile.pinePlanks.name=Furuplanker
+tile.pineSapling.name=Furuspire
+tile.blockGrindStone.name=Slipestein
+tile.pineLog.name=Furutre
+tile.blockGrindStone.name=Slipestein
+tile.netherTSoil.name=Nether-Trøffel Sand
+tile.netherTSoilCrop.name=Nether-Trøffel Avling
+tile.aGrass.name=Ruccolaplante
+tile.tomatoCrop.name=Tomatplante
+tile.netherOreSpinel.name=Nether Spinell Malm
+tile.blockSpinel_raw.name=Spinellblokk
+tile.blockSpinel_semiPoolished.name=Semi-polert Spinellblokk
+tile.blockSpinel_poolished.name=Polert Spinellblokk
+
+
+//Tab
+
+itemGroup.trufflemod=Trøffel Mod
+
+
+//Misc
+
+
+item.record.Avocado Republic.desc=The Immature Avocados - Avocado Republikk
